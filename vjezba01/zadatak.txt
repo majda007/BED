@@ -1,0 +1,2 @@
+zelimo na stranici prikazati sistemsko vrijeme 
+date ("Y-m-d H:i:s"); ovo provjeriti koliko je sati

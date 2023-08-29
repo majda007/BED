@@ -1,0 +1,3 @@
+app za upravljanje bilješkama 
+dodati novu
+pregled svih
