@@ -7,12 +7,11 @@ spl_autoload_register(function($className) {
 ";
       include $file;
    } else {
-      throw new Exception("Unable to load $className.");
+      throw new Exception("Ne mogu se spojiti $className.");
    }
 });
 try {
    $obj1 = new DB();
-   $obj2 = new test10();
 } catch (Exception $e) {
    echo $e->getMessage(), "
 ";
