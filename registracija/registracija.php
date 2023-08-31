@@ -12,7 +12,7 @@ class RegistracijaView
        Email:<input type="email" name="email" required><br><br>
        Lozinka:<input type="password" name="lozinka" required><br><br>
         Ponovljena lozinka: <input type="password" name="ponovljenalozinka" required><br><br>
-        <input type="submit" value="submit">
+        <input type="submit" name="submit">
         </form>
         
         ';
@@ -26,6 +26,8 @@ class RegistracijaView
         echo "<p>{$korisnik['prezime']}</p>";
         echo "<p>{$korisnik['email']}</p>";
         echo "<p>{$korisnik['lozinka']}</p>";
+        echo "<p>{$korisnik['ponovljenalozinka']}</p>";
+        echo "<p>{$korisnik['token']}</p>";
     }
 }
 }

@@ -15,23 +15,26 @@ class KorisnikController
             $korisnici=$this->korisnikmodel->dohvatiSvePodatke()->fetchAll(PDO::FETCH_ASSOC);
             $this->registracija->prikaziKorisnike($korisnici);
         }
-  /*      
+      
  public function prikaziEmail()
  {
      $korisnici=$this->korisnikmodel->emailPostoji()->fetchAll(PDO::FETCH_ASSOC);
      $this->registracija->prikaziKorisnike($korisnici);
      
  }
-*/
- public function dodajPodatke($ime, $prezime, $email, $lozinka)
- {
-    $this->korisnikmodel->ime=$ime;
-    $this->korisnikmodel->prezime=$prezime;
-    $this->korisnikmodel->email=$email;
-    $this->korisnikmodel->lozinka=$lozinka;
-    
-    $this->korisnikmodel->dodajPodatke();
- }
+
+ 
+
+
+ public function dodajPodatke($ime, $prezime, $email,  $lozinka, $token)
+    {
+       $this->korisnikmodel->ime=$ime;
+       $this->korisnikmodel->prezime=$prezime;
+       $this->korisnikmodel->email=$email;
+       $this->korisnikmodel->lozinka=$lozinka;
+       $this->korisnikmodel->token=$token;
+       $this->korisnikmodel->dodajPodatke();
+    }
 
 
 }
