@@ -6,9 +6,9 @@ class Klasa
 {
   
 private $host;
-   private $db;
-   private $user;
-    private $pass;
+private $db;
+private $user;
+private $pass;
 
     public function __construct()
     {

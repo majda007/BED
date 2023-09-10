@@ -4,13 +4,8 @@ class DB {
 	
 	
 	
-	private static $_instance; //The single instance
-	/*
-	private $_host = "localhost";
-	private $_username = "root";
-	private $_password = "majda123";
-	private $_database = "korisnici_db";
-	*/
+	private static $_instance; 
+	
 	private $conn;
     private $query;
 
